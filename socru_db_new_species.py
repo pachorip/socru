@@ -32,7 +32,7 @@ Entrez.email = 'purnima.pachori@quadram.ac.uk'
 search_term = bacteriaName + '[orgn] AND complete genome[title]'
 handle = Entrez.esearch(db='nucleotide', term=search_term,retmax=retmax)
 genome_ids = Entrez.read(handle)['IdList']
-genome_ids = genome_ids[0:3]
+#genome_ids = genome_ids[0:3] #Uncomment this for testing purposes only 
 #print(len(genome_ids))
 
 for i in genome_ids:
