@@ -23,7 +23,7 @@ try:
     os.mkdir(bacteriaName)
 except OSError:
     logging.info("Output dir exists!")
-    #sys.exit()
+    sys.exit() 
 else:
     logging.info("Output dir created!")
 
